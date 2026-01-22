@@ -1,0 +1,39 @@
+/* Hide Google AI Overview - Precise selectors only */
+
+/* Main AI Overview wrapper - the container with id eKIzJc */
+div#eKIzJc,
+div[id="eKIzJc"],
+
+/* AI Overview container with data-mcpr attribute */
+div.YzCcne[data-mcpr],
+
+/* The specific mcp value for AI Overview */
+div[data-mcp="18"],
+
+/* Direct AI Overview attribute targeting */
+div[data-attrid="AIOverview"],
+
+/* Async AI Overview loading */
+div[data-async-type="aiOverview"],
+
+/* AI Overview aria label */
+div[aria-label="AI Overview"] {
+  display: none !important;
+  visibility: hidden !important;
+  height: 0 !important;
+  overflow: hidden !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* Hide AI Mode from navigation filters */
+div.olrp5b,
+div[role="listitem"]:has(a[href*="udm=50"]),
+div[role="listitem"]:has(span.R1QWuf:only-child) a[href*="udm=50"],
+a.XVMlrc[href*="udm=50"],
+
+/* Hide AI Mode button on google.com homepage */
+button.plR5qb,
+button[jsname="B6rgad"] {
+  display: none !important;
+}
